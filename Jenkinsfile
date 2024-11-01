@@ -12,12 +12,12 @@ pipeline {
 		}
 		stage("Build") {
 			steps {
-				sh 'docker compose build web'
+				sh 'docker-compose build web'
 			}
 		}
 		stage("deploy") {
 			steps {
-				sh "docker compose up -d"
+				sh "docker-compose up -d"
 			}
 		}
 	}
