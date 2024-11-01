@@ -1,5 +1,5 @@
 name: jenkins
-
+version: 2.2
 services:
   web:
     build: .
